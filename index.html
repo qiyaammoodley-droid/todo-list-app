@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>To-Do List ✅</h1>
+      <p>Simple tasks. Clean focus. Get it done.</p>
+    </header>
+
+    <section class="card">
+      <form id="todoForm" class="form">
+        <input
+          id="taskInput"
+          type="text"
+          placeholder="Add a task... (e.g. Finish portfolio)"
+          autocomplete="off"
+          maxlength="60"
+          required
+        />
+        <button id="addBtn" type="submit">Add</button>
+      </form>
+
+      <div class="toolbar">
+        <span id="counter" class="counter">0 tasks</span>
+        <button id="clearCompletedBtn" class="secondary" type="button">
+          Clear Completed
+        </button>
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+
+    <footer class="footer">
+      <small>Built with HTML, CSS, and JavaScript.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
